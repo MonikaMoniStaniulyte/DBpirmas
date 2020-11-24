@@ -122,7 +122,7 @@ def get_customers():
 # ------------------------JOIN------------------------
 
 def join_customers_companies():
-    query = """SELECT Customers.*, Companies.name AS company_name 
+    query = """SELECT * 
                 FROM Customers 
                 JOIN Companies 
                     ON Customers.company_id = Companies.company_id """
